@@ -88,7 +88,7 @@ Scala
 
 Extended Backus–Naur Form
 [Online] Available from: http://en.wikipedia.org/wiki/Extended_Backus%E2%80%93Naur_Form
-[Accessed: 09 August 2014]
+[Accessed: 09 August 2014].
 ```
 
 
