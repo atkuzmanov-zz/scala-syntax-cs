@@ -4,20 +4,19 @@ scala-syntax-cs
 
 Some Scala syntax for personal use.
 -->
-# WIP
 
 # Brief Scala Syntax Cheat Sheet
 
-**_Table of contents_** 
-- [Syntax representation](#syntax-representation)
-- [Types](#types)
-- [Expressions](#expressions)
-- [Definitions](#definitions)
-- [References](#references)
+### Table of contents
+- **[Syntax representation](#syntax-representation)**
+- **[Types](#types)**
+- **[Expressions](#expressions)**
+- **[Definitions](#definitions)**
+- **[References](#references)**
 
-#### Syntax representation
+## Syntax representation
 
-**The syntax represented in Extended Backus-Naur Form (EBNF), where:**
+**The syntax represented in _Extended Backus-Naur Form (EBNF)_, where:**
 
 ```
  - | denotes alternative
