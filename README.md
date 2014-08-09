@@ -26,7 +26,7 @@ SimpleType = Identifier
 
 Types = Type {',' Type}
 ```
-A type can be:
+**A type can be:**
 
 - A **numeric type**: Int, Double (and Byte, Short, Char, Long, Float),
 - The **Boolean type** with the values **_true_** and **_false_**,
@@ -55,6 +55,16 @@ Binding = ident [':' Type]
 Block = '{' {Def ';'} Expr '}'
 ```
 
+**Expressions can be:**
+
+- An **identifier** sucha as **_x_**, **_isGoodEnough_**
+- A **literal**, like **_0_**, **_1.0_**, **_"abc"_**
+- A **function application**, like **_sqrt(x)_**
+- An **operator application** , like **_-x_**, **_y+x_**
+- A **selection**, like **_math.abs_**
+- A **conditional expr**, like **_if(x<0) -x else x_**
+- A **block**, like **_{val x = math.abs(y); x*2}_**
+- An **anonymous function**, like **_x=>x+1_**
 
 ## References
 
