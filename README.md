@@ -57,15 +57,14 @@ Block = '{' {Def ';'} Expr '}'
 
 **Expressions can be:**
 
-- An **identifier** such as **_x_**, **_isGoodEnough_**
 - An **identifier** such as ```x, isGoodEnough```
-- A **literal**, like **_0_**, **_1.0_**, **_"abc"_**
-- A **function application**, like **_sqrt(x)_**
-- An **operator application** , like **_-x_**, **_y+x_**
-- A **selection**, like **_math.abs_**
-- A **conditional expr**, like **_if(x<0) -x else x_**
-- A **block**, like **_{val x = math.abs(y); x*2}_**
-- An **anonymous function**, like **_x=>x+1_**
+- A **literal**, like ```0, 1.0, "abc"```
+- A **function application**, like ```sqrt(x)```
+- An **operator application** , like ```-x```, ```y+x```
+- A **selection**, like ```math.abs```
+- A **conditional expr**, like ```if(x<0) -x else x```
+- A **block**, like ```{val x = math.abs(y); x*2}```
+- An **anonymous function**, like ```x=>x+1```
 
 ## References
 
