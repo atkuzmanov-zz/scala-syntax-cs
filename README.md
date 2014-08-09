@@ -7,9 +7,9 @@ Some Scala syntax for personal use.
 
 # WIP (Work In Progress)
 
-# Scala Syntax Cheat Sheet
+# Brief Scala Syntax Cheat Sheet
 
-## Syntax represented in Extended Backus-Naur Form (EBNF), where:
+#### Syntax represented in Extended Backus-Naur Form (EBNF), where:
 ```
  - | denotes alternative
  - [...] an option (0 or 1)
@@ -22,7 +22,7 @@ Type = SimpleType | FunctionType
 
 FunctionType = SimpleType '=>' Type | '(' [Types] ')' '=>' Type
 
-SimpleType = Identifier
+SimpleType = identifier
 
 Types = Type {',' Type}
 ```
@@ -65,6 +65,28 @@ Block = '{' {Def ';'} Expr '}'
 - A **conditional expr**, like ```if(x<0) -x else x```
 - A **block**, like ```{val x = math.abs(y); x*2}```
 - An **anonymous function**, like ```x=>x+1```
+
+## Definitions
+
+```
+Def = FunctDef | ValDef
+
+FunctDef = def identifier{ '('[Parameters]')' }[: Type] '=' Expr
+
+ValDef = val identifier[':' Type] '=' Expr
+
+Parameters = Parameter{',' Parameter}
+
+Parameter = identifier ':' ['=>'] Type
+```
+
+**A definition can be:**
+- A **function definition**, like ```def square(x: Int) = x*x```
+- A **value definition***, like ```val y = square(2)```
+
+**A parameter can be:**
+- A **call-by-value parameter**, like ```(x: Int)```
+- A **call-by-name parameter**, like ```(y: => Double)```
 
 ## References
 
