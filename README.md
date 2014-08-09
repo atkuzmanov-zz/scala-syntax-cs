@@ -15,16 +15,43 @@ Some Scala syntax for personal use.
  - {...} a repetition (0 or more)
 
 ## Tpes
-
+```
 Type = SimpleType | FunctionType
 
 FunctionType = SimpleType '=>' Type | '(' [Types] ')' '=>' Type
 
-SimpleType = Ident
+SimpleType = Identifier
 
 Types = Type {',' Type}
+```
+A type can be:
 
+- A **numeric type**: Int, Double (and Byte, Short, Char, Long, Float),
+- The **Boolean type** with the values **_true_** and **_false_**,
+- The **String type**,
+- A **Function type**, like **_Int => Int, (Int, Int) => Int_**
 
+## Expressions
+
+```
+Expr = InfixExpr | FunctionExpr | if '(' Expr ')' Expr else Expr
+
+InfixExpr = PrefixExpr | InfixExpr Operator InfixExpr
+
+Operator = identifier
+
+PrefixExpr = ['+'|'-'|'!'|'~'] SimpleExpr
+
+SimpleExpr = identifier | literal | SimpleExpr '.' ident | Block
+
+FunctionExpr = Bindings '=>' Expr
+
+Bindings = identifier[':' SimpleType] | '('[Binding {',' Binding}] ')'
+
+Binding = ident [':' Type]
+
+Block = '{' {Def ';'} Expr '}'
+```
 
 
 ## References
