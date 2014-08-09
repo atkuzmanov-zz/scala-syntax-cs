@@ -12,6 +12,8 @@ Some Scala syntax for personal use.
 - [Syntax representation](#syntax-representation)
 - [Types](#types)
 - [Expressions](#expressions)
+- [Definitions](#definitions)
+- [References](#references)
 
 #### Syntax representation
 
