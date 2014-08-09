@@ -4,12 +4,17 @@ scala-syntax-cs
 
 Some Scala syntax for personal use.
 -->
-
-# WIP (Work In Progress)
+# WIP
 
 # Brief Scala Syntax Cheat Sheet
 
-#### Syntax represented in Extended Backus-Naur Form (EBNF), where:
+### Table of contents 
+**[Syntax representation](#syntax-representation)**
+
+#### Syntax representation
+
+**The syntax represented in Extended Backus-Naur Form (EBNF), where:**
+
 ```
  - | denotes alternative
  - [...] an option (0 or 1)
@@ -111,6 +116,11 @@ Scala
 Extended Backus–Naur Form
 [Online] Available from: http://en.wikipedia.org/wiki/Extended_Backus%E2%80%93Naur_Form
 [Accessed: 09 August 2014].
+
+The Scala Language Specification Version 2.9
+Martin Odersky.
+[Online] Available from: http://www.scala-lang.org/docu/files/ScalaReference.pdf
+[Accessed: 10 August 2014].
 ```
 
 
