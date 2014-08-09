@@ -8,8 +8,9 @@ Some Scala syntax for personal use.
 
 # Brief Scala Syntax Cheat Sheet
 
-### Table of contents 
+**_Table of contents_** 
 **[Syntax representation](#syntax-representation)**
+**[Types](#types)**
 
 #### Syntax representation
 
