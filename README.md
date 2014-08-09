@@ -28,10 +28,10 @@ Types = Type {',' Type}
 ```
 **A type can be:**
 
-- A **numeric type**: Int, Double (and Byte, Short, Char, Long, Float),
-- The **Boolean type** with the values **_true_** and **_false_**,
+- A **numeric type**: ```Int, Double (and Byte, Short, Char, Long, Float)```,
+- The **Boolean type** with the values ```true``` and ```false```,
 - The **String type**,
-- A **Function type**, like **_Int => Int, (Int, Int) => Int_**
+- A **Function type**, like ```Int => Int, (Int, Int) => Int```
 
 ## Expressions
 
@@ -57,7 +57,8 @@ Block = '{' {Def ';'} Expr '}'
 
 **Expressions can be:**
 
-- An **identifier** sucha as **_x_**, **_isGoodEnough_**
+- An **identifier** such as **_x_**, **_isGoodEnough_**
+- An **identifier** such as ```x, isGoodEnough```
 - A **literal**, like **_0_**, **_1.0_**, **_"abc"_**
 - A **function application**, like **_sqrt(x)_**
 - An **operator application** , like **_-x_**, **_y+x_**
