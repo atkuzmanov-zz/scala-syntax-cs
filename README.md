@@ -9,8 +9,9 @@ Some Scala syntax for personal use.
 # Brief Scala Syntax Cheat Sheet
 
 **_Table of contents_** 
-**[Syntax representation](#syntax-representation)**
-**[Types](#types)**
+- [Syntax representation](#syntax-representation)
+- [Types](#types)
+- [Expressions](#expressions)
 
 #### Syntax representation
 
@@ -22,7 +23,7 @@ Some Scala syntax for personal use.
  - {...} a repetition (0 or more)
 ```
 
-## Tpes
+## Types
 ```
 Type = SimpleType | FunctionType
 
